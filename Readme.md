@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Татьяна Суворина](https://up.htmlacademy.ru/htmlcss/22/user/780763).
-* Наставник: [Александр Юдин] (https://htmlacademy.ru/profile/a-yudin).
+* Наставник: [Александр Юдин](https://htmlacademy.ru/profile/a-yudin).
 
 ---
 
