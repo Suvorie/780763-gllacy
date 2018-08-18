@@ -82,9 +82,11 @@
               450 руб.
             </td>
           </tr>
+          <tr>
+            <td class="total-price">Итого: 750 руб.</td>
+          </tr>
         </table>
       </li>
-      <div class="total-price">Итого: 750 руб.</div>
       <button class="item-button" type="submit" value="Оформить заказ">Оформить заказ</button>
     </ul>
   </nav>
@@ -109,53 +111,56 @@
       <li class="real-road">Сливочное</li>
     </ul>
   </nav>
-  <div class="main-head">
-    <h1>
-      Сливочное мороженое
-    </h1>
-    <div class="sorting">
-      <p>
-        Сортировка:
-      </p>
-      <ul class="sort-way">
-        <li>
-          По популярности
-        </li>
-      </ul>
-    </div>
-    <div class="price-filter">
-      <p>
-        Цена: 100 руб. – 500 руб.
-      </p>
-      <p class="circles"></p>
-    </div>
-    <div class="fat-content">
-      <p>
-        Жирность:
-      </p>
-      <ul class="fat-scale">
-        <li>0%</li>
-        <li>до 10%</li>
-        <li>до 30%</li>
-        <li>выше 30%</li>
-      </ul>
-    </div>
-    <div class="fillers">
-      <p>
-        Наполнители:
-      </p>
-      <ul>
-        <li>Шоколадные</li>
-        <li>Сахарные присыпки</li>
-        <li>Фрукты</li>
-        <li>Сиропы</li>
-        <li>Джемы</li>
-      </ul>
-      <button class="sort-sett">
-        Применить
-      </button>
-    </div>
-  </div>
+  <h1>
+    Сливочное мороженое
+  </h1>
+  <form class="filters" action="#" method="post">
+    <fieldset class="sorting">
+      <legend>Сортировка:</legend>
+      <select id="sort">
+        <option value="popular">по популярности</option>
+        <option value="cheap">сначала недорогие</option>
+        <option value="expensive">сначала дорогие</option>
+        <option value="fatness">по жирности</option>
+      </select>
+    </fieldset>
+    <fieldset class="price">
+      <legend>Цена: 100 руб. – 500 руб.</legend>
+      <div class="feature-wrapper">
+        <input type="range">
+        <input type="range">
+      </div>
+    </fieldset>
+    <fieldset class="fat">
+      <legend>Жирность:</legend>
+      <div class="feature-wrapper">
+        <input type="radio" name="fatness"  value="0" id="zero">
+        <label for="zero">0%</label>
+        <input type="radio" name="fatness" value="10" id="ten" checked>
+        <label for="ten">до 10%</label>
+        <input type="radio" name="fatness" value="30" id="thirty">
+        <label for="thirty">до 30%</label>
+        <input type="radio" name="fatness" value="more 30" id="more-thirty">
+        <label for="more-thirty">выше 30%</label>
+      </div>
+    </fieldset>
+    <fieldset class="filling">
+      <legend>Наполнители:</legend>
+      <div class="feature-wrapper">
+        <input type="checkbox" value="шоколадные" id="chocolate" checked>
+        <label for="chocolate">шоколадные</label>
+        <input type="checkbox" value="сахарные присыпки" id="sugar" checked>
+        <label for="sugar">сахарные присыпки</label>
+        <input type="checkbox" value="фрукты" id="fruit">
+        <label for="fruit">фрукты</label>
+        <input type="checkbox" value="сиропы" id="syrup">
+        <label for="syrup">сиропы</label>
+        <input type="checkbox" value="джемы" id="jam">
+        <label for="jam">джемы</label>
+      </div>
+    </fieldset>
+    <button class="filter-button" type="submit" value="Применить">Применить</button>
+  </form>
   <section class="catalog">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <article class="item-creamy">
@@ -294,7 +299,7 @@
   <div class="pagination">
     <ul class="pages">
       <li>
-        <a href="#" class="forward">Вперед</a>
+        <a href="#" class="forward">Назад</a>
       </li>
       <li>
         <a href="#">1</a>
@@ -312,52 +317,48 @@
         <a href="#">5</a>
       </li>
       <li>
-        <a href="#" class="backward">Назад</a>
+        <a href="#" class="backward">Вперед</a>
       </li>
     </ul>
   </div>
 </main>
 <footer>
-  <div class="social-links">
-    <ul>
-      <li class="twitter">
-        <a href="#" name="twitter">
-          <img src="">
-        </a>
-      </li>
-      <li class="instagram">
-        <a href="#" name="instagram">
-          <img src="#">
-        </a>
-      </li>
-      <li class="facebook">
-        <a href="#" name="facebook">
-          <img src="#">
-        </a>
-      </li>
-      <li class="vkontakte">
-        <a href="#" name="vkontakte">
-          <img src="#">
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="corp-info">
-    <ul class="corp-info-list">
-      <li class="corp-info-provider">
-        <a href="#">Для поставщиков</a>
-      </li>
-      <li class="corp-info-production">
-        <a href="#">О производстве</a>
-      </li>
-      <li class="corp-info-documents">
-        <a href="#">Наши документы</a>
-      </li>
-      <li class="corp-info-ecostandarts">
-        <a href="#">Экологические стандарты</a>
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li class="twitter">
+      <a href="#" name="twitter">
+        <img src="">
+      </a>
+    </li>
+    <li class="instagram">
+      <a href="#" name="instagram">
+        <img src="#">
+      </a>
+    </li>
+    <li class="facebook">
+      <a href="#" name="facebook">
+        <img src="#">
+      </a>
+    </li>
+    <li class="vkontakte">
+      <a href="#" name="vkontakte">
+        <img src="#">
+      </a>
+    </li>
+  </ul>
+  <ul class="corp-info-list">
+    <li class="corp-info-provider">
+      <a href="#">Для поставщиков</a>
+    </li>
+    <li class="corp-info-production">
+      <a href="#">О производстве</a>
+    </li>
+    <li class="corp-info-documents">
+      <a href="#">Наши документы</a>
+    </li>
+    <li class="corp-info-ecostandarts">
+      <a href="#">Экологические стандарты</a>
+    </li>
+  </ul>
   <div class="copyright">
     <a href="#" class="logo">
       <img src="">
