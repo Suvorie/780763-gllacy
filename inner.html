@@ -42,12 +42,23 @@
     <ul class="user-block">
       <li class="search-button">
         <span>Search</span>
+        <form action="#" method="post">
+          <input type="search" name="search" placeholder="Что ищем?">
+          <label class="search"><span>Что ищем?</span></label>
+        </form>
       </li>
       <li class="entrance">
         <span>Вход</span>
+        <form class="authorization" action="#" method="post">
+          <input type="email" name="email" placeholder="Электронная почта">
+          <label class="email"><span>Электронная почта</span></label>
+          <input type="text" name="password" placeholder="Пароль">
+          <label class="password"><span>Пароль</span></label>
+          <button class="btn" type="submit" value="Войти">Войти</button>
+        </form>
       </li>
       <li class="basket">
-        <span>2 товара</span>
+        <a href="#"><span>2 товара</span></a>
         <table class="basket">
           <tr class="buskets">
             <td class="busket-cream">
