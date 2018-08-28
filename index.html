@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -18,7 +20,7 @@
 							<a href="#">Новинки</a>
 						</li>
 						<li class="types">
-							<a href="#">Сливочное</a>
+							<a href="/inner.html">Сливочное</a>
 						</li>
 						<li class="types">
 							<a href="#">Щербеты</a>
@@ -41,19 +43,19 @@
 		</nav>
 		<ul class="user-block">
 			<li class="search-button">
-				<span>Search</span>
+				<span></span>
 				<form action="#" method="post">
 					<input type="search" name="search" placeholder="Что ищем?">
-					<label class="search"><span>Что ищем?</span></label>
+					<label class="search"><span></span></label>
 				</form>
 			</li>
 			<li class="entrance">
 				<span>Вход</span>
 				<form class="authorization" action="#" method="post">
 					<input type="email" name="email" placeholder="Электронная почта">
-					<label class="email"><span>Электронная почта</span></label>
-					<input type="text" name="password" placeholder="Пароль">
-					<label class="password"><span>Пароль</span></label>
+					<label class="email"><span></span></label>
+					<input type="password" name="password" placeholder="Пароль">
+					<label class="password"><span></span></label>
 					<button class="btn" type="submit" value="Войти">Войти</button>
 				</form>
 			</li>
@@ -128,9 +130,9 @@
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<article class="item-creamy">
 				<a href="#">
-					<img src="img/ice1.jpjpgg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<img src="img/ice1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<p class="item-price">
-						310
+						310₽
 						<span>/кг</span>
 					</p>
 					<p class="ice-description">
@@ -145,7 +147,7 @@
 				<a href="#">
 					<img src="img/ice2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 					<p class="item-price">
-						380
+						380₽
 						<span>/кг</span>
 					</p>
 					<p class="ice-description">
@@ -160,7 +162,7 @@
 				<a href="#">
 					<img src="img/ice3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<p class="item-price">
-						355
+						355₽
 						<span>/кг</span>
 					</p>
 					<p class="ice-description">
@@ -176,7 +178,7 @@
 					<p class="item-price">
 						<img src="img/ice4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 						<p class="item-price">
-							414
+							414₽
 							<span>/кг</span>
 						</p>
 						<p class="ice-description">
@@ -222,7 +224,7 @@
 				Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
 			</p>
 			<form class="subscribe-form" action="index.html" method="post">
-				<input type="email" name="subscribe-email" placeholder="Электронная почта" value="Электронная почта">
+				<input type="email" name="subscribe-email" placeholder="Электронная почта">
 				<button class="btn" type="submit">Отправить</button>
 			</form>
 		</section>
@@ -231,12 +233,12 @@
 			</div>
 			<div class="contacts-info">
 				<p class="location">
-					Адрес главного офиса и офлайн-магазина
+					Адрес главного офиса и офлайн-магазина<br>
 					<b class="adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
 				</p>
 				<p class="phone">
-					Для заказов по телефону:
-					<a href="tel:+78124502525">8 812 450 25 25</a>
+					Для заказов по телефону:<br>
+					<a href="tel:+78124502525" class="telephone">8 812 450 25 25</a><br>
 					(с 10 до 20 ежедневно)
 				</p>
 				<a class="btn" href="#">Форма обратной связи</a>
