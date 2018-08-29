@@ -76,32 +76,33 @@
 	</header>
 	<main>
 		<section class="sliders">
-			<div class="toggles">
-				<input class="slider__control  slider__control-1" id="control-1" type="radio" name="slider" value="red" checked>
-				<input class="slider__control  slider__control-2" id="control-2" type="radio" name="slider" value="blue">
-				<input class="slider__control  slider__control-3" id="control-3" type="radio" name="slider" value="green">
-			</div>
-			<div class="sliders-background">
-				<!-- фон, который на том же уровне, как и скрытые инпуты -->
-				<div class="slide__background slide__background-1"></div>
-				<div class="slide__background slide__background-2"></div>
-				<div class="slide__background slide__background-3"></div>
-			</div>
+			<!-- Инпуты, которые скроем -->
+			<input class="slider__control  slider__control-1" id="control-1" type="radio" name="slider" value="red" checked>
+			<input class="slider__control  slider__control-2" id="control-2" type="radio" name="slider" value="blue">
+			<input class="slider__control  slider__control-3" id="control-3" type="radio" name="slider" value="green">
+			<!-- фон, который на том же уровне, как и скрытые инпуты -->
+			<div class="slide__background slide__background-1"></div>
+			<div class="slide__background slide__background-2"></div>
+			<div class="slide__background slide__background-3"></div>
+			<!-- блок с переключением слайдов, который на том же уровне, как и скрытые инпуты -->
 			<div class="slider__controls">
 				<label class="slider__label" for="control-1"></label>
 				<label class="slider__label" for="control-2"></label>
 				<label class="slider__label" for="control-3"></label>
 			</div>
-			<div class="slides-content">
+			<div class="slides">
 				<div class="slide  slide-1">
+					<img class="slide-img" src="img/slide1.png">
 					<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
-				<div class="slide  slide-2">
+				<div class="slide  slide-2">					
+					<img class="slide-img" src="img/slide2.png">
 					<p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
-					<a class="slide-btn" href="#">Давайте оба!</a> 
+					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
 				<div class="slide  slide-3">
+					<img class="slide-img" src="img/slide3.png">
 					<p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
