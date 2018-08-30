@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav class="logo"> 
+    <nav class="h-navigation"> 
       <a href="#" class="logo-link">
         <img src="img/svg/logo.svg">
       </a>
-    </nav>
     <ul class="h-navigation-items"> 
       <li>
         <a href="#">Каталог</a>
@@ -39,6 +40,7 @@
         <a href="#">О Компании</a>
       </li>
     </ul>
+  </nav>
     <ul class="user-block">
       <li class="search-button">
         <span>Search</span>
@@ -102,14 +104,14 @@
       <a href="#" class="item-button">Оформить заказ</a>
     </ul>
   </nav>
-  <div class="main-contacts">
-    <p class="work-time">
-      С 10 до 20, ежедневно
-    </p>
-    <a href="tel:+78124502525" class="phone">
-     812 450-25-25
-   </a>
- </div>
+    <div class="working-info">
+      <p class="working-info-time">
+        С 10 до 20 ежедневно
+      </p>
+      <a href="tel.+78124502525">
+        8 812 450 25 25
+      </a>
+    </div>
 </header>
 <main>
   <nav class="breadcrumbs">
@@ -172,13 +174,13 @@
     </fieldset>
     <button class="filter-button" type="submit" value="Применить">Применить</button>
   </form>
-  <section class="catalog">
+  <section class="items">
     <h2 class="visually-hidden">Каталог товаров</h2>
     <article class="item-creamy">
       <a href="#">
-        <img src="img/ice1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        <img src="img/ice1.jpg">
         <p class="item-price">
-          310
+          310₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -189,9 +191,9 @@
     </article>
     <article class="item-coffee">
       <a href="#">
-        <img src="img/ice2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+        <img src="img/ice2.jpg">
         <p class="item-price">
-          380
+          380₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочно-кофейное с кусочками шоколада</p>
@@ -202,9 +204,9 @@
     </article>
     <article class="item-strawberry">
       <a href="#">
-        <img src="img/ice3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        <img src="img/ice3.jpg">
         <p class="item-price">
-          355
+          355₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -215,9 +217,9 @@
     </article>
     <article class="item-brulee">
       <a href="#">
-        <img src="img/ice4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+        <img src="img/ice4.jpg">
         <p class="item-price">
-          415
+          415₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное крем-брюле с карамельной подливкой</p>
@@ -228,9 +230,9 @@
     </article>
     <article class="item-lingon">
       <a href="#">
-        <img src="img/ice5.jpg" alt="Сливочное с брусничным джемом">
+        <img src="img/ice5.jpg" >
         <p class="item-price">
-          325
+          325₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с брусничным джемом</p>
@@ -241,9 +243,9 @@
     </article>
     <article class="item-blueberries">
       <a href="#">
-        <img src="img/ice6.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+        <img src="img/ice6.jpg">
         <p class="item-price">
-          410
+          410₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочно-черничное с цельными ягодами черники</p>
@@ -254,9 +256,9 @@
     </article>
     <article class="item-lemon">
       <a href="#">
-        <img src="img/ice7.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+        <img src="img/ice7.jpg">
         <p class="item-price">
-          375
+          375₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочно-лимонное с карамельной присыпкой</p>
@@ -267,9 +269,9 @@
     </article>
     <article class="item-choco">
       <a href="#">
-        <img src="img/ice8.jpg" alt="Сливочное с шоколадной стружкой">
+        <img src="img/ice8.jpg">
         <p class="item-price">
-          320
+          320₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с шоколадной стружкой</p>
@@ -280,9 +282,9 @@
     </article>
     <article class="item-vanilla">
       <a href="#">
-        <img src="img/ice9.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+        <img src="img/ice9.jpg">
         <p class="item-price">
-          440
+          440₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочно-ванильное с кусочками шоколада</p>
@@ -293,9 +295,9 @@
     </article>
     <article class="item-menthol">
       <a href="#">
-        <img src="img/ice10.jpg" alt="Сливочное с ментоловым сиропом">
+        <img src="img/ice10.jpg">
         <p class="item-price">
-          435
+          435₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с ментоловым сиропом</p>
@@ -306,9 +308,9 @@
     </article>
     <article class="item-darkchoco">
       <a href="#">
-        <img src="img/ice11.jpg" alt="Сливочное с кусочками черного шоколада">
+        <img src="img/ice11.jpg">
         <p class="item-price">
-          355
+          355₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с кусочками черного шоколада</p>
@@ -319,9 +321,9 @@
     </article>
     <article class="item-mint">
       <a href="#">
-        <img src="img/ice12.jpg" alt="Сливочное с мятным сиропом">
+        <img src="img/ice12.jpg">
         <p class="item-price">
-          420
+          420₽
           <span>/кг</span>
         </p>
         <p class="ice-description">Сливочное с мятным сиропом</p>

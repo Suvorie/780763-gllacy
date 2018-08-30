@@ -158,6 +158,15 @@ input[type="text"] {
   border-radius: 20px;
 }
 
+.forgotten,
+.registration {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: underline solid #323232;
+}
+
 .search-button {
   margin-bottom: 10px;
 }
@@ -180,13 +189,55 @@ input[type="text"] {
   border-radius: 50%;
 }
 
-.forgotten,
-.registration {
-  font-size: 12px;
-  line-height: 14px;
-  font-weight: 400;
+.basket .products {
+  margin-top: 10px;
+  display: content-box;
+  padding: 6px 16px;
+  background-color: rgba(248,247,244,0.3);
+  border-radius: 50px;
+}
+
+.basket .products:hover {
+  display: content-box;
+  background-color: #f7f6f3;
+  border-radius: 50px;
   color: #323232;
-  text-decoration: underline solid #323232;
+  font-weight: bold;
+}
+
+.basket-list {
+  display: inline-block; 
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+  width: 520px;
+  min-height: 220px;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+  color: #323232;
+}
+
+.busket-cream-wt span {
+  color: #999999;
+  font-weight: 400px;
+}
+
+.busket-cream-wt:hover span {
+  color: #999999;
+  font-weight: 400px;
+}
+
+.products:hover .basket-list {
+  display: inline-block; 
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+  width: 520px;
+  min-height: 220px;
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
 }
 
 .working-info {
@@ -207,6 +258,14 @@ input[type="text"] {
   font-weight: bold;
   font-size: 30px;
   text-decoration: none;
+}
+
+.breadcrumbs li {
+  list-style: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline solid #ffbc9e;
 }
 
 /* Начало стилизации слайдеров */
@@ -468,7 +527,6 @@ input[type="text"] {
   font-size: 35px;
   line-height: 30px;
 }
-
 .items {
   display: inline-block;
   margin-top: 40px;
@@ -477,7 +535,7 @@ input[type="text"] {
 }
 
 .item-price {
-  font-size: 24px;
+  font-size: 45px;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -490,7 +548,7 @@ input[type="text"] {
 }
 
 .item-price:hover {
-  font-size: 24px;
+  font-size: 45px;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -537,6 +595,47 @@ input[type="text"] {
   padding: 6px 14px 20px;
 }
 
+.items .item-lingon {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-blueberries {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-lemon {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-choco {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-vanilla {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-menthol {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-darkchoco {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+.items .item-mint {
+  display: inline-block;
+  padding: 6px 14px 20px;
+}
+
+
 .items .item-creamy:hover {
   background-color: rgba(255,255,255,0.1);
   border-radius: 3px;
@@ -556,6 +655,56 @@ input[type="text"] {
 }
 
 .items .item-brulee:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+
+.items .item-lingon:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-blueberries:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-lemon:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-choco:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+
+.items .item-vanilla:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-menthol:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-darkchoco:hover {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 3px;
+  box-shadow: 0 2px 15px #656565;
+}
+
+.items .item-mint:hover {
   background-color: rgba(255,255,255,0.1);
   border-radius: 3px;
   box-shadow: 0 2px 15px #656565;
@@ -646,6 +795,77 @@ input[type="text"] {
   display: inline-block;
 }
 
+
+.item-lingon .view {
+  display: none;
+}
+
+.item-lingon:hover .view {
+  display: inline-block;
+}
+
+.item-blueberries .view {
+  display: none;
+}
+
+.item-blueberries:hover .view {
+  display: inline-block;
+}
+
+.item-lemon .view {
+  display: none;
+}
+
+.item-lemon:hover .view {
+  display: inline-block;
+}
+
+.item-choco .view {
+  display: none;
+}
+
+.item-choco:hover .view {
+  display: inline-block;
+}
+
+
+.item-vanilla .view {
+  display: none;
+}
+
+.item-vanilla:hover .view {
+  display: inline-block;
+}
+
+.item-menthol .view {
+  display: none;
+}
+
+.item-menthol:hover .view {
+  display: inline-block;
+}
+
+.item-darkchoco .view {
+  display: none;
+}
+
+.item-darkchoco:hover .view {
+  display: inline-block;
+}
+
+.item-mint .view {
+  display: none;
+}
+
+.item-mint:hover .view {
+  display: inline-block;
+}
+
+.pages {
+  list-style: none;
+  
+}
+
 .advantages {
   margin: 10px;
   padding: 10px 20px;
@@ -734,6 +954,34 @@ a:active {
   color: #323232;
 }
 
+
+.pages a {
+  display: inline-block;
+  box-sizing: content-box;
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.pages a:hover {
+  display: inline-block;
+  box-sizing: content-box; 
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.pages a:active {
+  display: inline-block;
+  box-sizing: content-box; 
+  border-radius: 50%;
+  padding: 5px 10px;
+  color: #323232;
+  background-color: #ffffff;
+}
+
 .twitter, .instagram, .facebook, .vkontakte {
   list-style: none;
 }
@@ -751,6 +999,27 @@ a:active {
   border-radius: 50%;
 } 
 .facebook img {
+  border: 3px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+
+.vkontakte img:hover {
+  background-color: rgba(255,255,255,0.6);
+  border: 3px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+.twitter img:hover {
+  background-color: rgba(255,255,255,0.6);
+  border: 3px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+.instagram img:hover {
+  background-color: rgba(255,255,255,0.6);
+  border: 3px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+} 
+.facebook img:hover {
+  background-color: rgba(255,255,255,0.6);
   border: 3px solid rgba(255,255,255,0.6);
   border-radius: 50%;
 }
