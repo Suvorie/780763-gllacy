@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -12,38 +12,38 @@
       <a href="#" class="logo-link">
         <img src="img/svg/logo.svg">
       </a>
-    <ul class="h-navigation-items"> 
-      <li>
-        <a href="#">Каталог</a>
-        <ul class="catalog-items">
-          <li class="new-ice">
-            <a href="#">Новинки</a>
-          </li>
-          <li class="types">
-            <a href="#">Сливочное</a>
-          </li>
-          <li class="types">
-            <a href="#">Щербеты</a>
-          </li>
-          <li class="types">
-            <a href="#">Фруктовый лёд</a>
-          </li>
-          <li class="types">
-            <a href="#">Мелорин</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Доставка и оплата</a>
-      </li>
-      <li>
-        <a href="#">О Компании</a>
-      </li>
-    </ul>
-  </nav>
+      <ul class="h-navigation-items"> 
+        <li>
+          <a href="#">Каталог</a>
+          <ul class="catalog-items">
+            <li class="new-ice">
+              <a href="#">Новинки</a>
+            </li>
+            <li class="types">
+              <a href="#">Сливочное</a>
+            </li>
+            <li class="types">
+              <a href="#">Щербеты</a>
+            </li>
+            <li class="types">
+              <a href="#">Фруктовый лёд</a>
+            </li>
+            <li class="types">
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">О Компании</a>
+        </li>
+      </ul>
+    </nav>
     <ul class="user-block">
       <li class="search-button">
-        <span>Search</span>
+        <span></span>
         <form action="#" method="post">
           <input type="search" name="search" placeholder="Что ищем?">
           <label class="search"><span>Что ищем?</span></label>
@@ -60,8 +60,8 @@
         </form>
       </li>
       <li class="basket">
-        <a href="#"><span>2 товара</span></a>
-        <table class="basket">
+        <a href="#"><span class="products">2 товара</span></a>
+        <table class="basket-list">
           <tr class="buskets">
             <td class="busket-cream">
               <button class="cream-delete">х</button>
@@ -73,7 +73,7 @@
               Пломбир с апельсиновым джемом
             </td>
             <td class="busket-cream-wt">
-              <b>1,5 кг</b> х 200 руб.
+              <b>1,5 кг</b> х <span>200 руб.</span>
             </td>
             <td class="busket-cream">
               300 руб.
@@ -90,7 +90,7 @@
               Клубничный пломбир с присыпкой из белого шоколада
             </td>
             <td class="busket-cream-wt">
-              <b>1,5 кг</b> х 300 руб.
+              <b>1,5 кг</b> х <span>300 руб.</span>
             </td>
             <td class="busket-cream">
               450 руб.
@@ -99,19 +99,21 @@
           <tr>
             <td class="total-price">Итого: 750 руб.</td>
           </tr>
+          <tr>
+            <td><a href="#" class="btn">Оформить заказ</a></td>
+          </tr>
         </table>
       </li>
-      <a href="#" class="item-button">Оформить заказ</a>
     </ul>
   </nav>
-    <div class="working-info">
-      <p class="working-info-time">
-        С 10 до 20 ежедневно
-      </p>
-      <a href="tel.+78124502525">
-        8 812 450 25 25
-      </a>
-    </div>
+  <div class="working-info">
+    <p class="working-info-time">
+      С 10 до 20 ежедневно
+    </p>
+    <a href="tel.+78124502525">
+      8 812 450 25 25
+    </a>
+  </div>
 </header>
 <main>
   <nav class="breadcrumbs">
@@ -176,7 +178,7 @@
   </form>
   <section class="items">
     <h2 class="visually-hidden">Каталог товаров</h2>
-    <article class="item-creamy">
+    <article class="item">
       <a href="#">
         <img src="img/ice1.jpg">
         <p class="item-price">
@@ -189,7 +191,7 @@
         </a>
       </a>
     </article>
-    <article class="item-coffee">
+    <article class="item">
       <a href="#">
         <img src="img/ice2.jpg">
         <p class="item-price">
@@ -202,7 +204,7 @@
         </a>
       </a>
     </article>
-    <article class="item-strawberry">
+    <article class="item">
       <a href="#">
         <img src="img/ice3.jpg">
         <p class="item-price">
@@ -215,7 +217,7 @@
         </a>
       </a>
     </article>
-    <article class="item-brulee">
+    <article class="item">
       <a href="#">
         <img src="img/ice4.jpg">
         <p class="item-price">
@@ -228,7 +230,7 @@
         </a>
       </a>
     </article>
-    <article class="item-lingon">
+    <article class="item">
       <a href="#">
         <img src="img/ice5.jpg" >
         <p class="item-price">
@@ -241,7 +243,7 @@
         </a>
       </a>
     </article>
-    <article class="item-blueberries">
+    <article class="item">
       <a href="#">
         <img src="img/ice6.jpg">
         <p class="item-price">
@@ -254,7 +256,7 @@
         </a>
       </a>
     </article>
-    <article class="item-lemon">
+    <article class="item">
       <a href="#">
         <img src="img/ice7.jpg">
         <p class="item-price">
@@ -267,7 +269,7 @@
         </a>
       </a>
     </article>
-    <article class="item-choco">
+    <article class="item">
       <a href="#">
         <img src="img/ice8.jpg">
         <p class="item-price">
@@ -280,7 +282,7 @@
         </a>
       </a>
     </article>
-    <article class="item-vanilla">
+    <article class="item">
       <a href="#">
         <img src="img/ice9.jpg">
         <p class="item-price">
@@ -293,7 +295,7 @@
         </a>
       </a>
     </article>
-    <article class="item-menthol">
+    <article class="item">
       <a href="#">
         <img src="img/ice10.jpg">
         <p class="item-price">
@@ -306,7 +308,7 @@
         </a>
       </a>
     </article>
-    <article class="item-darkchoco">
+    <article class="item">
       <a href="#">
         <img src="img/ice11.jpg">
         <p class="item-price">
@@ -319,7 +321,7 @@
         </a>
       </a>
     </article>
-    <article class="item-mint">
+    <article class="item">
       <a href="#">
         <img src="img/ice12.jpg">
         <p class="item-price">

@@ -4,25 +4,19 @@ body {
   font-weight: normal;
   line-height: 22px;
   margin: 0;
-  padding: 10px;
   color: #ffffff;
   background-color: #849d8f;
 }
 
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover,
-a:link,
-a:active {
-  color: #ffbc9e;
-  text-decoration: none;
-}
-
 .visually-hidden {
-  display: none;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 .logo-link img {
@@ -40,8 +34,8 @@ a:active {
 }
 
 .h-navigation-items a {
+  color: #ffffff;
   padding: 7px 15px;
-  background-color: transparent;
   font-weight: 400;
   text-decoration: underline solid rgba(255,255,255,0.6);
   list-style: none;
@@ -137,25 +131,18 @@ input[type="text"] {
 }
 
 .entrance span {
-  display: content-box;
+  display: inline-block;
   background-color: rgba(248,247,244,0.3);
-  background-image: url(../img/svg/entrance.svg);
   background-repeat: no-repeat;
   background-position: left;
   color: #ffffff;
   padding: 5px 15px;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .entrance span:hover {
-  display: content-box;
   background-color: rgba(248,247,244,1);
-  background-image: url(../img/svg/entrance.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-  padding: 5px 15px;
   color: #000000;
-  border-radius: 20px;
 }
 
 .forgotten,
@@ -172,7 +159,7 @@ input[type="text"] {
 }
 
 .search-button span {
-  display: content-box;
+  display: inline-block;
   background-color: rgba(248,247,244,0.3);
   background-image: url(../img/svg/loupe.svg);
   background-position: center;
@@ -181,7 +168,7 @@ input[type="text"] {
 }
 
 .search-button span:hover {
-  display: content-box;
+  display: inline-block;
   background-color: rgba(248,247,244,1);
   background-image: url(../img/svg/loupe.svg);
   background-position: center;
@@ -189,18 +176,31 @@ input[type="text"] {
   border-radius: 50%;
 }
 
+.basket span {
+  color: #ffffff;
+display: inline-block;
+  background-color: rgba(248,247,244,0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  padding: 5px 15px;
+}
+
+.basket span:hover {
+  background-color: rgba(248,247,244,1);
+  color: #000000;
+}
+
 .basket .products {
   margin-top: 10px;
-  display: content-box;
+  display: inline-block;
   padding: 6px 16px;
   background-color: rgba(248,247,244,0.3);
   border-radius: 50px;
 }
 
 .basket .products:hover {
-  display: content-box;
   background-color: #f7f6f3;
-  border-radius: 50px;
   color: #323232;
   font-weight: bold;
 }
@@ -517,7 +517,6 @@ input[type="text"] {
   width: 520px;
   height: 220px;
   padding: 10px 20px;
-  margin-left: 26px;
   font-weight: bold;
   margin-bottom: 40px;
   line-height: 22px;
@@ -527,11 +526,15 @@ input[type="text"] {
   font-size: 35px;
   line-height: 30px;
 }
+
+
+
 .items {
   display: inline-block;
   margin-top: 40px;
   text-align: center;
   font-style: normal;
+  text-decoration: none;
 }
 
 .item-price {
@@ -562,149 +565,25 @@ input[type="text"] {
 
 .items .ice-description {
   color: #ffffff;
-  text-decoration: underline solid rgba(255,255,255,0.6);
+  text-decoration: underline;
 }
 
 .items .ice-description:hover {
   color: #ffbc9e;
-  text-decoration: underline solid #ffbc9e;
+  text-decoration: underline;
 }
 
 .items .ice-description:active {
   color: #ffbc9e;
-  text-decoration: underline solid #ffbc9e;
+  text-decoration: underline;
 }
 
-.items .item-creamy {
+.items .item {
   display: inline-block;
   padding: 6px 14px 20px;
 }
 
-.items .item-coffee {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-strawberry {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-brulee {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-lingon {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-blueberries {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-lemon {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-choco {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-vanilla {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-menthol {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-darkchoco {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-.items .item-mint {
-  display: inline-block;
-  padding: 6px 14px 20px;
-}
-
-
-.items .item-creamy:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-coffee:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-strawberry:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-brulee:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-
-.items .item-lingon:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-blueberries:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-lemon:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-choco:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-
-.items .item-vanilla:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-menthol:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-darkchoco:hover {
-  background-color: rgba(255,255,255,0.1);
-  border-radius: 3px;
-  box-shadow: 0 2px 15px #656565;
-}
-
-.items .item-mint:hover {
+.items .item:hover {
   background-color: rgba(255,255,255,0.1);
   border-radius: 3px;
   box-shadow: 0 2px 15px #656565;
@@ -763,107 +642,12 @@ input[type="text"] {
   font-family: inherit;
 }
 
-.item-creamy .view {
+.item .view {
   display: none;
 }
 
-.item-creamy:hover .view {
+.item:hover .view {
   display: inline-block;
-}
-
-.item-coffee .view {
-  display: none;
-}
-
-.item-coffee:hover .view {
-  display: inline-block;
-}
-
-.item-strawberry .view {
-  display: none;
-}
-
-.item-strawberry:hover .view {
-  display: inline-block;
-}
-
-.item-brulee .view {
-  display: none;
-}
-
-.item-brulee:hover .view {
-  display: inline-block;
-}
-
-
-.item-lingon .view {
-  display: none;
-}
-
-.item-lingon:hover .view {
-  display: inline-block;
-}
-
-.item-blueberries .view {
-  display: none;
-}
-
-.item-blueberries:hover .view {
-  display: inline-block;
-}
-
-.item-lemon .view {
-  display: none;
-}
-
-.item-lemon:hover .view {
-  display: inline-block;
-}
-
-.item-choco .view {
-  display: none;
-}
-
-.item-choco:hover .view {
-  display: inline-block;
-}
-
-
-.item-vanilla .view {
-  display: none;
-}
-
-.item-vanilla:hover .view {
-  display: inline-block;
-}
-
-.item-menthol .view {
-  display: none;
-}
-
-.item-menthol:hover .view {
-  display: inline-block;
-}
-
-.item-darkchoco .view {
-  display: none;
-}
-
-.item-darkchoco:hover .view {
-  display: inline-block;
-}
-
-.item-mint .view {
-  display: none;
-}
-
-.item-mint:hover .view {
-  display: inline-block;
-}
-
-.pages {
-  list-style: none;
-  
 }
 
 .advantages {
@@ -954,6 +738,9 @@ a:active {
   color: #323232;
 }
 
+.pages {
+  list-style: none;
+}
 
 .pages a {
   display: inline-block;
@@ -1025,12 +812,26 @@ a:active {
 }
 
 .corp-info-list {
-  list-style: none; 
-  text-decoration: underline solid rgba(255,255,255,0.6);
+  list-style: none;
 }
 
-.corp-info-list .corp-info-provider {
+.corp-info-list a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.corp-info-provider {
   font-weight: bold;
+}
+
+.corp-info-list a:hover {
+  color: #e2b49a;
+  text-decoration: underline;
+}
+
+.corp-info-list a:active {
+  color: #e2b49a;
+  text-decoration: underline;
 }
 
 .copyright .logo img {
@@ -1038,11 +839,12 @@ a:active {
   height: 40px;
 }
 
-
-.copyright .copyright a {
-  text-decoration: underline solid rgba(255,255,255,0.6);
+.copyright a {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-.copyright .copyright a:hover {
-  text-decoration: underline solid rgba(226,180,154,0.6);
+.copyright a:hover {
+  color: #e2b49a;
+  text-decoration: underline;
 }
