@@ -7,7 +7,7 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="head main">
+	<header class="head wrapper">
 		<nav class="h-navigation">	
 			<a href="#" class="logo-link">
 				<img src="img/svg/logo.svg">
@@ -59,10 +59,10 @@
 						<label class="password"></label>
 						<div class="entrance-form">
 							<button class="btn" type="submit" value="Войти">Войти</button>
-							<nav class="helper">
+							<div class="helper">
 								<a href="#" class="forgotten">Забыли пароль?</a>
 								<a href="#" class="registration">Новая регистрация</a>
-							</nav>
+							</div>
 						</div>
 					</form>
 				</li>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 	</header>
-	<main class="main">
+	<main class="wrapper">
 		<section class="sliders">
 			<!-- Инпуты, которые скроем -->
 			<input class="slider__control  slider__control-1" id="control-1" type="radio" name="slider" value="red" checked>
@@ -116,7 +116,7 @@
 		</section>
 		<section class="shares">
 			<h2 class="visually-hidden">Наши акции</h2>
-			<div class="berry-promo">
+			<div class="promo berry-promo">
 				<p class="caption">
 					Малинка даром!
 				</p>
@@ -125,7 +125,7 @@
 				</p>
 				<a class="btn" href="#">Хочу варенье!</a>
 			</div>
-			<div class="choco-promo">
+			<div class="promo choco-promo">
 				<p class="caption">
 					Шоколадки даром!
 				</p>
@@ -251,23 +251,10 @@
 					(с 10 до 20 ежедневно)
 				</p>
 				<a class="btn" href="#">Форма обратной связи</a>
-				<div class="popup-feedback feedback-content-show">
-					<h3>Мы обязательно вам ответим!</h3>
-					<button class="popup-close" type="button" title="Закрыть">Закрыть</button>
-					<form action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" name="feedback-name" placeholder="Как вас зовут?" required="">
-						<label class="hiden-top"><span>Как вас зовут?</span></label>
-						<input type="email" name="email" placeholder="Ваша почта для ответа?" required="">
-						<label class="hiden-top"><span>Ваша почта для ответа?</span></label>
-						<textarea name="feedback-text" placeholder="Напишите что-нибудь..." required=""></textarea>
-						<label class="hiden-top"><span>Напишите что-нибудь...</span></label>
-						<button class="btn">Отправить</button>
-					</form>
-				</div>
 			</div>
 		</section>
 	</main>
-	<footer class="footer main">
+	<footer class="footer wrapper">
 		<ul class="social-list list-style">
 			<li class="twitter">
 				<a href="#" name="twitter">
