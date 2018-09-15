@@ -8,10 +8,8 @@
 </head>
 <body>
 	<header class="head wrapper">
-		<nav class="h-navigation">	
-			<a href="#" class="logo-link">
-				<img src="img/svg/logo.svg">
-			</a>
+		<nav class="h-navigation">
+			<img src="img/svg/logo.svg">
 			<ul class="h-navigation-items list-style">
 				<li class="top-menu-item">
 					<a href="#">Каталог</a>
@@ -46,17 +44,15 @@
 				<li class="search-button">
 					<span></span>
 					<form class="search" action="#" method="post">
-						<input type="search" name="search" placeholder="Что ищем?">
+						<input type="search" name="search" class="search-input" placeholder="Что ищем?">
 						<label class="search-form"></label>
 					</form>
 				</li>
 				<li class="entrance">
 					<span>Вход</span>
 					<form class="authorization" action="#" method="post">
-						<input type="email" name="email" class="email-form" placeholder="Электронная почта">
-						<label class="email"></label><br>
-						<input type="password" name="password" placeholder="Пароль">
-						<label class="password"></label>
+						<input type="email" name="email" class="email-form" placeholder="Электронная почта"><br>
+						<input type="password" name="password" class="password"placeholder="Пароль">
 						<div class="entrance-form">
 							<button class="btn" type="submit" value="Войти">Войти</button>
 							<div class="helper">
@@ -102,8 +98,8 @@
 					<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
-				<div class="slide  slide-2">					
-					<img class="slide-img" src="img/slide2.png">
+				<div class="slide  slide-2">
+				<img class="slide-img" src="img/slide2.png">				
 					<p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
@@ -208,10 +204,10 @@
 					Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
 				</li>
 				<li class="advantages advantage-2">
-					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
+					Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
 				</li>
 				<li class="advantages advantage-3">
-					Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
+					Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
 				</li>
 				<li class="advantages advantage-4">
 					Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.
@@ -224,7 +220,7 @@
 					Новое в нашем блоге
 				</p>
 				<a class="blog-link" href="#">
-					10  способов сервировки<br> фруктовых щербетов к<br> столу
+					10  способов сервировки фруктовых щербетов к столу
 				</a>
 			</section>
 			<section class="subscription">
@@ -232,7 +228,7 @@
 					Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
 				</p>
 				<form class="subscribe-form" action="index.html" method="post">
-					<input type="email" name="subscribe-email" placeholder="Электронная почта">
+					<input type="email" name="subscribe-email" class="subscribe-email" placeholder="Электронная почта">
 					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</section>
@@ -253,6 +249,17 @@
 				<a class="btn" href="#">Форма обратной связи</a>
 			</div>
 		</section>
+		<div class="overlay"></div>
+    <div class="modal-feedback">
+      <h2 class="modal-feedback-title">Мы обязательно вам ответим!</h2>
+      <form action="url" class="modal-feedback-form">
+        <input type="text" name="name" id="input-name" class="feedback-input" placeholder="Как вас зовут?">
+        <input type="email" name="email" id="input-email" class="feedback-input" placeholder="Ваша почта для ответа?">
+        <textarea name="extra" id="feedback-textarea" cols="50" rows="7" class="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="btn btn-modal">Отправить</button>
+      </form>
+      <button class="feedback-close" type="button">Закрыть</button>
+    </div>
 	</main>
 	<footer class="footer wrapper">
 		<ul class="social-list list-style">
