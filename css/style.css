@@ -1567,13 +1567,12 @@
  	display: flex;
  	justify-content: space-between;
  	flex-direction: row;
+ 	margin-bottom: 40px;
  }
 
  .blog {
  	box-sizing: content-box;
  	width: 290px;
- 	margin-bottom: 10px;
- 	margin-top: 10px;
  	padding: 10px;
  	padding-right: 260px;
  	border-radius: 15px;
@@ -1603,8 +1602,6 @@
  	box-sizing: border-box;
  	width: 560px;
  	margin-left: 5px;
- 	margin-bottom: 10px;
- 	margin-top: 10px;
  	min-height: 200px;
  	border-radius: 20px;
  	background-color: #f8f7f4;
@@ -1639,6 +1636,187 @@
  	padding: 14px;
  }
 
+/* Блок с картой и контактами */
+
+.contacts {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.contacts-map {
+    min-height: 429px;
+    background: url(../img/pin.png) calc(50% - 250px) 138px no-repeat,
+    url(../img/map.png) center 0 no-repeat;
+}
+
+.contacts-info {
+	position: absolute;
+    top: 62px;
+    left: 50%;
+    width: 302px;
+    margin-left: 271px;
+ 	box-sizing: border-box;
+ 	width: 302px;
+ 	padding: 30px 25px;
+ 	font-size: 14px;
+ 	line-height: 24px;
+ 	color: #323232;
+ 	background-color: #ffffff;
+ 	border-radius: 10px;
+ }
+
+.contacts-info .adress {
+ 	font-size: 18px;
+ }
+
+ .contacts-info .telephone {
+ 	font-size: 18px;
+ 	font-weight: 700;
+ 	color: #323232;
+ }
+
+ /* Конец блок с картой и контактами */
+
+ .pages {
+ 	display: flex;
+ 	justify-content: flex-end;
+ 	align-items: flex-start;
+ 	margin-top: 50px;
+ 	margin-bottom: 40px;
+ 	position: relative;
+ }
+
+ .pages::after {
+ 	content: "";
+ 	position: absolute;
+ 	top: 55px;
+ 	right: 0px;
+ 	left: 0px;
+ 	height: 1px;
+ 	background-color: rgba(255,255,255,0.3);
+ }
+
+ .pages a {
+ 	display: inline-block;
+ 	box-sizing: content-box;
+ 	border-radius: 50%;
+ 	padding: 5px 10px;
+ 	color: #ffffff;
+ 	background-color: transparent;
+ }
+
+ .pages a:hover {
+ 	display: inline-block;
+ 	box-sizing: content-box; 
+ 	border-radius: 50%;
+ 	padding: 5px 10px;
+ 	color: #ffffff;
+ 	background-color: rgba(255,255,255,0.4);
+ }
+
+ .pages a:active {
+ 	display: inline-block;
+ 	box-sizing: content-box; 
+ 	border-radius: 50%;
+ 	padding: 5px 10px;
+ 	color: #323232;
+ 	background-color: #ffffff;
+ }
+
+ .pages .first {
+ 	display: inline-block;
+ 	box-sizing: content-box; 
+ 	border-radius: 50%;
+ 	padding: 5px 10px;
+ 	color: #323232;
+ 	background-color: #ffffff;
+ }
+
+ .pages .forward::after {
+ 	content: "<";
+ 	color: rgba(255,255,255,0.4);
+ }
+
+ .pages .backward::after {
+ 	content: ">";
+ }
+
+ .footer {
+ 	display: flex; 
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+ .social-list {
+ 	display: flex;
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+
+ .social-networks {
+ 	border: 3px solid rgba(255,255,255,0.6);
+ 	border-radius: 50%;
+ 	margin-right: 10px;
+ }
+
+ .social-networks:hover {
+ 	background-color: rgba(255,255,255,0.6);
+ }
+
+ .corp-info-list {
+ 	display: flex;
+    width: 388px;
+    margin: 0;
+    padding: 15px 0 0 25px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+ .corp-info-list a {
+ 	color: #ffffff;
+ 	text-decoration: underline;
+ 	font-size: 13px;
+ }
+
+ .corp-info-list a:hover {
+ 	color: #e2b49a;
+ }
+
+ .corp-info-provider {
+ 	font-weight: 700;
+ }
+
+ .corp-info-provider::before {
+ 	content: url(../img/svg/heart.svg);
+ 	position: absolute;
+ 	left: 535px;
+ 	font-size: 13px;
+ }
+
+ .copyright {
+ 	text-align: left;
+ 	margin-top: 0px;
+ 	margin-bottom: 0px;
+ 	font-size: 13px;
+ }
+
+ .logo img {
+ 	width: 110px;
+ 	height: 40px;
+ 	margin-bottom: 0px;
+ }
+
+ .copyright a {
+ 	color: #ffffff;
+ 	text-decoration: underline;
+ }
+
+ .copyright a:hover {
+ 	color: #e2b49a;
+ }
+
+ /* Форма обратной связи */
+ 
  .overlay {
     height: 100vh;
     background: rgba(0,0,0,.3);
@@ -1753,158 +1931,3 @@
     margin-right: 25px;
     margin-bottom: 15px;
 }
-
- .contacts-info {
- 	box-sizing: border-box;
- 	width: 302px;
- 	padding: 30px 25px;
- 	font-size: 14px;
- 	line-height: 24px;
- 	color: #323232;
- 	background-color: #ffffff;
- 	border-radius: 10px;
- }
-
- .contacts-info .adress {
- 	font-size: 18px;
- }
-
- .contacts-info .telephone {
- 	font-size: 18px;
- 	font-weight: 700;
- 	color: #323232;
- }
-
- .pages {
- 	display: flex;
- 	justify-content: flex-end;
- 	align-items: flex-start;
- 	margin-top: 50px;
- 	margin-bottom: 40px;
- 	position: relative;
- }
-
- .pages::after {
- 	content: "";
- 	position: absolute;
- 	top: 55px;
- 	right: 0px;
- 	left: 0px;
- 	height: 1px;
- 	background-color: rgba(255,255,255,0.3);
- }
-
- .pages a {
- 	display: inline-block;
- 	box-sizing: content-box;
- 	border-radius: 50%;
- 	padding: 5px 10px;
- 	color: #ffffff;
- 	background-color: transparent;
- }
-
- .pages a:hover {
- 	display: inline-block;
- 	box-sizing: content-box; 
- 	border-radius: 50%;
- 	padding: 5px 10px;
- 	color: #ffffff;
- 	background-color: rgba(255,255,255,0.4);
- }
-
- .pages a:active {
- 	display: inline-block;
- 	box-sizing: content-box; 
- 	border-radius: 50%;
- 	padding: 5px 10px;
- 	color: #323232;
- 	background-color: #ffffff;
- }
-
- .pages .first {
- 	display: inline-block;
- 	box-sizing: content-box; 
- 	border-radius: 50%;
- 	padding: 5px 10px;
- 	color: #323232;
- 	background-color: #ffffff;
- }
-
- .pages .forward::after {
- 	content: "<";
- 	color: rgba(255,255,255,0.4);
- }
-
- .pages .backward::after {
- 	content: ">";
- }
-
- .footer {
- 	display: flex; 
- 	justify-content: space-between;
- 	align-items: center;
- }
-
- .social-list {
- 	display: flex;
- 	justify-content: space-around;
- 	align-items: center;
- }
-
- .social-networks {
- 	border: 3px solid rgba(255,255,255,0.6);
- 	border-radius: 50%;
- 	margin-right: 10px;
- }
-
- .social-networks:hover {
- 	background-color: rgba(255,255,255,0.6);
- }
-
- .corp-info-list {
- 	column-count: 2;
- 	column-gap: 0px;
- } 
-
- .corp-info-list a {
- 	color: #ffffff;
- 	text-decoration: underline;
- 	font-size: 13px;
- }
-
- .corp-info-list a:hover {
- 	color: #e2b49a;
- }
-
- .corp-info-provider {
- 	font-weight: 700;
- }
-
- .corp-info-provider::before {
- 	content: url(../img/svg/heart.svg);
- 	position: absolute;
- 	left: 535px;
- 	font-size: 13px;
- }
-
- .copyright {
- 	text-align: left;
- 	margin-top: 0px;
- 	margin-bottom: 0px;
- 	font-size: 13px;
- }
-
- .logo img {
- 	width: 110px;
- 	height: 40px;
- 	margin-bottom: 0px;
- }
-
- .copyright a {
- 	color: #ffffff;
- 	text-decoration: underline;
- }
-
- .copyright a:hover {
- 	color: #e2b49a;
- }
