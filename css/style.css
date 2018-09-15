@@ -881,11 +881,6 @@
  	color: #ffffff;
  }
 
- .catalog-adress {
- 	position: relative;
- 	top: -50px;
- }
-
  .breadcrumbs li {
  	display: inline;
  }
@@ -905,10 +900,10 @@
  	content: "»";
  	text-decoration: none;
  }
+
 .filters-form {
   display: flex;
   margin: 0 auto;
-  padding-right: 294px;
   flex-wrap: wrap;
   align-items: flex-start;
 }
@@ -932,12 +927,11 @@
 .filter-sorting-wrap {
   position: relative;
   overflow: hidden;
-  width: 193px;
   border-radius: 18px;
   background: rgba(248, 247, 244, 0.2);
 }
 
-.filter__sorting-wrap::after {
+.filter-sorting-wrap::after {
   position: absolute;
   z-index: 1;
   top: 16px;
@@ -946,14 +940,16 @@
   width: 9px;
   height: 5px;
   content: "";
-  background: url(../img/svg/select-arrow.svg) -198px -10px no-repeat;
+  background: url(../img/svg/select-arrow.svg) no-repeat;
 }
 
 .filter-sorting {
   position: relative;
   z-index: 2;
-  width: 210px;
-  padding: 7px 25px 8px 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 25px;
+  padding-left: 16px;
   color: inherit;
   border: none;
   outline: none;
@@ -968,9 +964,13 @@
   color: #323232;
 }
 
+.filter-sorting-wrap:hover::after {
+  background: url(../img/svg/select-arrow-black.svg) no-repeat;
+}
+
 .filter-sorting option {
   color: #323232;
-  background: #fff;
+  background: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.14;
@@ -984,11 +984,14 @@
   display: flex;
   width: 218px;
   flex-wrap: wrap;
+  margin-right: 16px;
 }
 
 .filter-range {
   padding-top: 16px;
-  padding: 8px 6px 10px 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 16px;
   border-radius: 18px;
   background: rgba(248, 247, 244, 0.2);
 }
@@ -1040,10 +1043,16 @@
 
 /* Начало стилизации жирности */
 
+.filter-fat {
+	margin-left: 16px;
+}
+
 .filter-variants-wrap {
     display: flex;
-    width: 419px;
-    padding: 8px 6px 10px 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 18px;
     background: rgba(248, 247, 244, 0.2);
     flex-wrap: wrap;
@@ -1090,16 +1099,25 @@
 
 /* Начало стилизации наполнителя */
 
- .filters-form input[type=checkbox]+label {
- 	margin-right: 21px;
+.filter-variants-wrap-filling {
+	padding-bottom: 7px;
+}
+
+.filter-filling-label {
+    position: relative;
+    margin-right: 22px;
+    padding-left: 29px;
+}
+
+.filters-form input[type=checkbox]+label {
+	margin-right: 21px;
  }
  
   .filters-form input[type=checkbox]+label::before {
  	content: url(../img/svg/checkbox-off.svg);
- 	margin-right: 11px;
- 	width: 16px;
- 	height: 16px;
- 	vertical-align: middle;
+ 	position: absolute;
+    top: 0;
+    left: 0;
  }
  
  .filters-form input[type=checkbox]:checked+label::before {
