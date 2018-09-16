@@ -1989,7 +1989,7 @@
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .social-list {
@@ -2067,6 +2067,21 @@
 
 /* Форма обратной связи */
 
+
+
+.overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 6;
+  position: fixed;
+  justify-content: center; 
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2077,39 +2092,30 @@
   }
 }
 
-.overlay {
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 6;
-  position: fixed;
-  display: none;
-}
-
 .modal-show {
-  display: block;
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  animation: bounce 0.9s;
+  display: flex;
 }
 
-.modal-feedback {
-  position: relative;
-  z-index: 100;
-  width: 478px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 25px;
-  color: #999;
-  border-radius: 10px;
-  background: #f8f7f4;
-}
+.modal-feedback { 
+display: none; 
+position: relative; 
+z-index: 100; 
+width: 478px; 
+padding-top: 12px; 
+padding-bottom: 12px; 
+padding-left: 25px; 
+color: #999; 
+border-radius: 10px; 
+background: #f8f7f4; 
+} 
 
-.modal-content-show {
-  display: block;
+.modal-feedback.show { 
+display: block; 
+animation: bounce 0.9s; 
+} 
+
+.modal-content-show { 
+display: block; 
 }
 
 .modal-feedback-title {
