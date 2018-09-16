@@ -12,22 +12,22 @@
 			<img src="img/svg/logo.svg">
 			<ul class="h-navigation-items list-style">
 				<li class="top-menu-item">
-					<a href="#">Каталог</a>
+					<a href="#" class="first-menu">Каталог</a>
 					<ul class="sub-menu">
-						<li>
-							<a class="new-items" href="#">Новинки</a>
+						<li tabindex="0">
+							<a class="sub-menu-points new-items" href="#">Новинки</a>
 						</li>
-						<li>
-							<a href="inner.html">Сливочное</a>
+						<li tabindex="0">
+							<a href="inner.html" class="sub-menu-points">Сливочное</a>
 						</li>
-						<li>
-							<a href="#">Щербеты</a>
+						<li tabindex="0">
+							<a href="#" class="sub-menu-points">Щербеты</a>
 						</li>
-						<li>
-							<a href="#">Фруктовый лед</a>
+						<li tabindex="0">
+							<a href="#" class="sub-menu-points">Фруктовый лед</a>
 						</li>
-						<li>
-							<a href="#">Мелорин</a>
+						<li tabindex="0">
+							<a href="#" class="sub-menu-points">Мелорин</a>
 						</li>
 					</ul>
 				</li>
@@ -41,29 +41,32 @@
 		</nav>
 		<div class="column-right">
 			<ul class="user-block list-style">
-				<li class="search-button">
-					<span></span>
-					<form class="search" action="#" method="post">
-						<input type="search" name="search" class="search-input" placeholder="Что ищем?">
-						<label class="search-form"></label>
-					</form>
+				<li class="user-point search-button" tabindex="0">
+					<span class="search-button-content">Поиск по сайту</span>
+					<div class="search-wrapper">
+						<form class="search" action="#" method="post">
+							<input type="text" name="search" class="search-input" placeholder="Что ищем?">
+						</form>
+					</div>
 				</li>
-				<li class="entrance">
-					<span>Вход</span>
-					<form class="authorization" action="#" method="post">
-						<input type="email" name="email" class="email-form" placeholder="Электронная почта"><br>
-						<input type="password" name="password" class="password"placeholder="Пароль">
-						<div class="entrance-form">
-							<button class="btn" type="submit" value="Войти">Войти</button>
-							<div class="helper">
-								<a href="#" class="forgotten">Забыли пароль?</a>
-								<a href="#" class="registration">Новая регистрация</a>
+				<li class="user-point entrance">
+					<span class="entrance-content" tabindex="0">Вход</span>
+					<div class="entrance-wrapper">
+						<form class="authorization" action="#" method="post">
+							<input type="email" name="email" class="email-form" placeholder="Электронная почта" tabindex="0"><br>
+							<input type="password" name="password" class="password"placeholder="Пароль" tabindex="0">
+							<div class="entrance-form">
+								<button class="btn" type="submit" value="Войти" tabindex="0">Войти</button>
+								<div class="helper">
+									<a href="#" class="forgotten" tabindex="0">Забыли пароль?</a>
+									<a href="#" class="registration" tabindex="0">Новая регистрация</a>
 							</div>
-						</div>
-					</form>
+							</div>
+						</form>
+					</div>
 				</li>
-				<li class="basket">
-					<span>Пусто</span>
+				<li class="basket" tabindex="0">
+					<span class="basket-main">Пусто</span>
 				</li>
 			</ul>
 			<div class="working-info">
@@ -88,9 +91,9 @@
 			<div class="slide__background slide__background-3"></div>
 			<!-- блок с переключением слайдов, который на том же уровне, как и скрытые инпуты -->
 			<div class="slider__controls">
-				<label class="slider__label" for="control-1"></label>
-				<label class="slider__label" for="control-2"></label>
-				<label class="slider__label" for="control-3"></label>
+				<label class="slider__label" for="control-1" tabindex="0"></label>
+				<label class="slider__label" for="control-2" tabindex="0"></label>
+				<label class="slider__label" for="control-3" tabindex="0"></label>
 			</div>
 			<div class="slides">
 				<div class="slide  slide-1">
@@ -134,8 +137,8 @@
 		<section class="items">
 			<h2 class="visually-hidden">Каталог товаров</h2>
 			<article class="catalog-item">
-				<a href="#" class="catalog-content">
-					<img src="img/ice1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+				<a href="#" class="catalog-content hit">
+					<img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 					<p class="item-price">
 						310₽
 						<span>/кг</span>
@@ -149,8 +152,8 @@
 				</a>
 			</article>
 			<article class="catalog-item">
-				<a href="#" class="catalog-content">
-					<img src="img/ice2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+				<a href="#" class="catalog-content hit">
+					<img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 					<p class="item-price">
 						380₽
 						<span>/кг</span>
@@ -164,8 +167,8 @@
 				</a>
 			</article>
 			<article class="catalog-item">
-				<a href="#" class="catalog-content">
-					<img src="img/ice3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+				<a href="#" class="catalog-content hit">
+					<img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<p class="item-price">
 						355₽
 						<span>/кг</span>
@@ -179,8 +182,8 @@
 				</a>
 			</article>
 			<article class="catalog-item">
-				<a href="#" class="catalog-content">
-					<img src="img/ice4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+				<a href="#" class="catalog-content hit">
+					<img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 					<p class="item-price">
 						415₽
 						<span>/кг</span>
