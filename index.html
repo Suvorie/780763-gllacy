@@ -5,11 +5,12 @@
 	<title>HTML Academy: Глейси</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 	<header class="head wrapper">
 		<nav class="h-navigation">
-			<img src="img/svg/logo.svg" alt="логотип">
+			<img src="img/svg/logo.svg" width="154" height="64" alt="логотип">
 			<ul class="h-navigation-items list-style">
 				<li class="top-menu-item">
 					<a href="#" class="first-menu">Каталог</a>
@@ -44,7 +45,7 @@
 				<li class="user-point search-button" tabindex="0">
 					<span class="search-button-content">Поиск по сайту</span>
 					<div class="search-wrapper">
-						<form class="search" action="#" method="post">
+						<form class="search" action="сatalog.html" method="post">
 							<input type="text" name="search" class="search-input" placeholder="Что ищем?">
 						</form>
 					</div>
@@ -52,7 +53,7 @@
 				<li class="user-point entrance">
 					<span class="entrance-content" tabindex="0">Вход</span>
 					<div class="entrance-wrapper">
-						<form class="authorization" action="#" method="post">
+						<form class="authorization" action="сatalog.html" method="post">
 							<input type="email" name="email" class="email-form" placeholder="Электронная почта" tabindex="0"><br>
 							<input type="password" name="password" class="password" placeholder="Пароль" tabindex="0">
 							<div class="entrance-form">
@@ -60,7 +61,7 @@
 								<div class="helper">
 									<a href="#" class="forgotten" tabindex="0">Забыли пароль?</a>
 									<a href="#" class="registration" tabindex="0">Новая регистрация</a>
-							</div>
+								</div>
 							</div>
 						</form>
 					</div>
@@ -82,32 +83,32 @@
 	<main class="wrapper">
 		<section class="sliders">
 			<!-- Инпуты, которые скроем -->
-			<input class="slider__control  slider__control-1" id="control-1" type="radio" name="slider" value="red" checked>
-			<input class="slider__control  slider__control-2" id="control-2" type="radio" name="slider" value="blue">
-			<input class="slider__control  slider__control-3" id="control-3" type="radio" name="slider" value="green">
+			<input class="slider-control  slider-control-1" id="control-1" type="radio" name="slider" value="red" checked>
+			<input class="slider-control  slider-control-2" id="control-2" type="radio" name="slider" value="blue">
+			<input class="slider-control  slider-control-3" id="control-3" type="radio" name="slider" value="green">
 			<!-- фон, который на том же уровне, как и скрытые инпуты -->
-			<div class="slide__background slide__background-1"></div>
-			<div class="slide__background slide__background-2"></div>
-			<div class="slide__background slide__background-3"></div>
+			<div class="slide-background slide-background-1"></div>
+			<div class="slide-background slide-background-2"></div>
+			<div class="slide-background slide-background-3"></div>
 			<!-- блок с переключением слайдов, который на том же уровне, как и скрытые инпуты -->
-			<div class="slider__controls">
-				<label class="slider__label" for="control-1" tabindex="0"></label>
-				<label class="slider__label" for="control-2" tabindex="0"></label>
-				<label class="slider__label" for="control-3" tabindex="0"></label>
+			<div class="slider-controls">
+				<label class="slider-label" for="control-1" tabindex="0"></label>
+				<label class="slider-label" for="control-2" tabindex="0"></label>
+				<label class="slider-label" for="control-3" tabindex="0"></label>
 			</div>
 			<div class="slides">
 				<div class="slide  slide-1">
-					<img class="slide-img" src="img/slide1.png" alt="слайд1">
+					<img class="slide-img" width="1045" height="881" src="img/slide1.png" alt="слайд1">
 					<p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
 				<div class="slide  slide-2">
-					<img class="slide-img" src="img/slide2.png" alt="слайд2">				
+					<img class="slide-img" width="1065" height="859" src="img/slide2.png" alt="слайд2">				
 					<p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
-				<div class="slide  slide-3">
-					<img class="slide-img" src="img/slide3.png" alt="слайд3">
+				<div class="slide slide-3">
+					<img class="slide-img" width="1079" height="854" src="img/slide3.png" alt="слайд3">
 					<p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
 					<a class="slide-btn" href="#">Давайте оба!</a>
 				</div>
@@ -135,12 +136,11 @@
 			</div>
 		</section>
 		<section class="items items-main">
-			<h2 class="visually-hidden">Каталог товаров</h2>
 			<article class="сatalog-item hit">
 				<img src="img/ice1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 				<p class="item-price">
 					310₽
-					<span>/кг</span>
+					<span class="weight">/кг</span>
 				</p>
 				<a href="#" class="ice-description">
 					Сливочное с апельсиновым джемом и цитрусовой стружкой
@@ -153,7 +153,7 @@
 				<img src="img/ice2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 				<p class="item-price">
 					380₽
-					<span>/кг</span>
+					<span class="weight">/кг</span>
 				</p>
 				<a href="#" class="ice-description">
 					Сливочно-кофейное с кусочками шоколада
@@ -166,7 +166,7 @@
 				<img src="img/ice3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 				<p class="item-price">
 					355₽
-					<span>/кг</span>
+					<span class="weight">/кг</span>
 				</p>
 				<a href="#" class="ice-description">
 					Сливочно-клубничное с присыпкой из белого шоколада
@@ -179,7 +179,7 @@
 				<img src="img/ice4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 				<p class="item-price">
 					415₽
-					<span>/кг</span>
+					<span class="weight">/кг</span>
 				</p>
 				<a href="#" class="ice-description">
 					Сливочное крем-брюле с карамельной подливкой
@@ -241,9 +241,8 @@
 					</div>
 					<div class="order-contacts">
 						<p class="phone-adress">Для заказов по телефону:
-							<br>
 							<a href="tel:+78124502525" class="telephone">8 812 450-25-25</a>
-							<br>(с 10 до 20 ежедневно)
+							(с 10 до 20 ежедневно)
 						</p>
 						<a class="btn btn-feedback" href="#">Форма обратной связи</a>
 					</div>
@@ -254,24 +253,16 @@
 	<footer class="footer wrapper">
 		<ul class="social-list list-style">
 			<li class="twitter">
-				<a href="#" id="twitter">
-					<img class="social-networks" src="img/svg/twitter.svg" alt="Твиттер">
-				</a>
+				<a href="#" id="twitter"></a>
 			</li>
 			<li class="instagram">
-				<a href="#" id="instagram">
-					<img class="social-networks" src="img/svg/instagram.svg" alt="Инстаграм">
-				</a>
+				<a href="#" id="instagram"></a>
 			</li>
 			<li class="facebook">
-				<a href="#" id="facebook">
-					<img class="social-networks" src="img/svg/fb.svg" alt="Фейсбук">
-				</a>
+				<a href="#" id="facebook"></a>
 			</li>
 			<li class="vkontakte">
-				<a href="#" id="vkontakte">
-					<img class="social-networks" src="img/svg/vk.svg" alt="Вконтакте">
-				</a>
+				<a href="#" id="vkontakte"></a>
 			</li>
 		</ul>
 		<ul class="corp-info-list list-style">
@@ -288,31 +279,32 @@
 				<a href="#">Экологические стандарты</a>
 			</li>
 		</ul>
-		<div class="copyright">
+		<div class="copyright-logo">
 			<a href="https://htmlacademy.ru/intensive/htmlcss" class="logo">
-				<img src="img/svg/logo-htmlacademy.svg" alt="логотип в футере">
+				<img src="img/svg/logo-htmlacademy.svg" width="110" height="40" alt="логотип в футере">
 			</a>
 			<p class="copyright">
 				Сделано в 
-				<a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+				<a href="httimgs://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
 				© 2018
 			</p>
 		</div>
 	</footer>
 	<div class="overlay">
-	<div class="modal-feedback">
-		<h2 class="modal-feedback-title">
-			Мы обязательно вам ответим!
-		</h2>
-		<form action="url" class="modal-feedback-form">
-			<input type="text" name="name" id="input-name" class="feedback-input" placeholder="Как вас зовут?">
-			<input type="email" name="email" id="input-email" class="feedback-input" placeholder="Ваша почта для ответа?">
-			<textarea name="extra" id="feedback-textarea" cols="50" rows="7" class="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
-			<button class="btn btn-modal">Отправить</button>
-		</form>
-		<button class="feedback-close" type="button">Закрыть</button>
+		<div class="modal-feedback">
+			<h2 class="modal-feedback-title">
+				Мы обязательно вам ответим!
+			</h2>
+			<form action="index.html" class="modal-feedback-form">
+				<input type="text" name="name" id="input-name" class="feedback-input" placeholder="Как вас зовут?">
+				<input type="email" name="email" id="input-email" class="feedback-input" placeholder="Ваша почта для ответа?">
+				<textarea name="extra" id="feedback-textarea" cols="50" rows="7" class="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
+				<button class="btn btn-modal">Отправить</button>
+			</form>
+			<button class="feedback-close" type="button">Закрыть</button>
+		</div>
 	</div>
-	</div>
-  <script src="js/script.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>

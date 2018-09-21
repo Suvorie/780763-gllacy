@@ -26,6 +26,19 @@ login.focus();
 } 
 }); 
 
+form.addEventListener("submit", function (evt) {
+if (!email.value) {
+evt.preventDefault();
+popup.classList.remove("modal-error");
+popup.offsetWidth = popup.offsetWidth;
+popup.classList.add("modal-error");
+} else {
+if (isStorageSupport) {
+localStorage.setItem("login", login.value);
+}
+}
+});
+
 close.addEventListener("click", function (evt) { 
 evt.preventDefault(); 
 overlay.classList.remove("modal-show"); 
