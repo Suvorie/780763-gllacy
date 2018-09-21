@@ -1457,6 +1457,8 @@ a {
   background-color: transparent;
   border: 2px solid #ffffff;
   cursor: pointer;
+  font-size: 0;
+  line-height: 0;
 }
 
 /* Стилизация самих слайдов */
@@ -1699,7 +1701,6 @@ a {
 
 .items-main {
   margin-bottom: -4px;
-  margin-left: -8px;
 }
 
 /* Ссылка внутри article */

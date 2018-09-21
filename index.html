@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -92,9 +91,9 @@
 			<div class="slide-background slide-background-3"></div>
 			<!-- блок с переключением слайдов, который на том же уровне, как и скрытые инпуты -->
 			<div class="slider-controls">
-				<label class="slider-label" for="control-1" tabindex="0"></label>
-				<label class="slider-label" for="control-2" tabindex="0"></label>
-				<label class="slider-label" for="control-3" tabindex="0"></label>
+				<label class="slider-label" for="control-1" tabindex="0">Слайд 1</label>
+				<label class="slider-label" for="control-2" tabindex="0">Слайд 2</label>
+				<label class="slider-label" for="control-3" tabindex="0">Слайд 3</label>
 			</div>
 			<div class="slides">
 				<div class="slide  slide-1">
@@ -244,7 +243,7 @@
 							<a href="tel:+78124502525" class="telephone">8 812 450-25-25</a>
 							(с 10 до 20 ежедневно)
 						</p>
-						<a class="btn btn-feedback" href="#">Форма обратной связи</a>
+						<a class="btn btn-feedback" href="write-us.html">Форма обратной связи</a>
 					</div>
 				</div>
 			</div>
@@ -295,7 +294,7 @@
 			<h2 class="modal-feedback-title">
 				Мы обязательно вам ответим!
 			</h2>
-			<form action="index.html" class="modal-feedback-form">
+			<form action="https://echo.htmlacademy.ru/" class="modal-feedback-form">
 				<input type="text" name="name" id="input-name" class="feedback-input" placeholder="Как вас зовут?">
 				<input type="email" name="email" id="input-email" class="feedback-input" placeholder="Ваша почта для ответа?">
 				<textarea name="extra" id="feedback-textarea" cols="50" rows="7" class="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea>
@@ -304,7 +303,6 @@
 			<button class="feedback-close" type="button">Закрыть</button>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>
