@@ -1,10 +1,10 @@
 "use strict"; 
-var link = document.querySelector(".btn-feedback"); 
+var link = document.querySelector(".btn-feedback");
 var popup = document.querySelector(".modal-feedback"); 
 var overlay = document.querySelector(".overlay"); 
 var close = popup.querySelector(".feedback-close"); 
 var form = popup.querySelector(".modal-feedback-form"); 
-var email = popup.querySelector("[name=email"); 
+var email = popup.querySelector("[name=email");
 var isStorageSupport = true; 
 var storage = ""; 
 try { 
@@ -26,18 +26,6 @@ login.focus();
 } 
 }); 
 
-form.addEventListener("submit", function (evt) {
-if (!email.value) {
-evt.preventDefault();
-popup.classList.remove("modal-error");
-popup.offsetWidth = popup.offsetWidth;
-popup.classList.add("modal-error");
-} else {
-if (isStorageSupport) {
-localStorage.setItem("login", login.value);
-}
-}
-});
 
 close.addEventListener("click", function (evt) { 
 evt.preventDefault(); 

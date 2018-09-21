@@ -2402,32 +2402,6 @@ a {
   }
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .modal-show {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2507,8 +2481,6 @@ a {
 }
 
 .feedback-input:focus {
-  color: #323232;
-  font-weight: 700;
   border: 2px solid #8fbdec;
   padding: 14px;
  }
@@ -2529,8 +2501,6 @@ a {
 }
 
 .feedback-textarea:focus {
-  color: #323232;
-  font-weight: 700;
   border: 2px solid #8fbdec;
   padding: 14px;
 }
