@@ -391,7 +391,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 /* Стилизация главной навигации */
@@ -1404,7 +1404,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 78px;
-  margin-top: 491px;
+  margin-top: 493px;
   position: relative;
 }
 
@@ -1490,7 +1490,7 @@ a {
   margin-top: -190px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 55px;
+  margin-bottom: 77px;
   text-align: center;
   vertical-align: bottom;
   width: 685px;
@@ -1698,7 +1698,7 @@ a {
 }
 
 .items-main {
-  margin-bottom: 2px;
+  margin-bottom: -4px;
   margin-left: -8px;
 }
 
@@ -1729,9 +1729,9 @@ a {
 
 .сatalog-item:hover {
   background-color: rgba(255,255,255,0.3);
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 7px;
-  -webkit-box-shadow: 0 20px 20px rgba(0,0,0,0.1);
-          box-shadow: 0 20px 20px rgba(0,0,0,0.1);
   z-index: 20;
   margin-bottom: -61px;
 }
@@ -1835,8 +1835,6 @@ a {
 /* Конец стилизации каталога */
 
 .advantages-list {
-  display: inline-block;
-  vertical-align: middle;
   margin-bottom: 40px;
   padding-right: 18px;
   padding-left: 18px;
@@ -2009,7 +2007,7 @@ a {
 .contacts {
   position: relative;
   background: url(../img/pin.png) calc(50% - 250px) 138px no-repeat, url(../img/map.png) center 0 no-repeat;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   height: 430px;
   margin-right: -27px;
   margin-left: -27px;
@@ -2233,7 +2231,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 9px;
+  margin-top: 6px;
 }
 
 .twitter {
