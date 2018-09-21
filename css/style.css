@@ -1752,6 +1752,7 @@ a {
   content: "";
   position: absolute;
   top: 10px;
+  left: 10px;
   width: 61px;
   height: 61px;
   background-image: url(../img/svg/hit.svg);
@@ -1815,6 +1816,12 @@ a {
 }
 
 /*Цена на мороженках */
+
+.item-image {
+  border-radius: 50%;
+  overflow: hidden;
+  line-height: 0;
+}
 
 .item-price {
   padding-left: 0px;
